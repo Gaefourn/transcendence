@@ -1,0 +1,107 @@
+[
+	{
+		"name":	"playGame",
+		"achievements": [
+			{
+				"name":        "Newbie",
+				"description": "Played 1 game",
+				"progressMax": 1
+			},
+			{
+				"name":        "Regular",
+				"description": "Played 10 game",
+				"progressMax": 10
+			},
+			{
+				"name":        "Veteran",
+				"description": "Played 50 games",
+				"progressMax": 50
+			}
+		]
+	},
+
+	{
+		"name":	"winGame",
+		"achievements": [
+			{
+				"name":        "Dawn",
+				"description": "Win 1 game",
+				"progressMax": 1
+			},
+			{
+				"name":        "Path to Glory",
+				"description": "Win 10 games",
+				"progressMax": 10
+			},
+			{
+				"name":        "Rising Star",
+				"description": "Win 50 games",
+				"progressMax": 50
+			}
+		]
+	},
+
+	{
+		"name": "ballExchange",
+		"achievements": [{
+			"name":        "I can do this all day",
+			"description": "Have a 20 long exchange in a game",
+			"progressMax": 20
+		}]
+	},
+
+	{
+		"name": "channelCreate",
+		"achievements": [
+			{
+				"name":        "I'll make my own",
+				"description":  "Create a channel",
+				"progressMax": 1
+			},
+			{
+				"name":        "Social Network",
+				"description": "Create 5 channels",
+				"progressMax": 5
+			}
+		]
+	},
+
+	{
+		"name": "channelAdmin",
+		"achievements": [{
+			"name":        "I'm the boss now",
+			"description":  "Be promoted admin of a channel",
+			"progressMax": 1
+		}]
+	},
+
+	{
+		"name": "talk",
+		"achievements": [
+			{
+				"name":        "Hello World",
+				"description":  "Send 1 Message",
+				"progressMax": 1
+			},
+			{
+				"name":        "Thesaurus",
+				"description":  "Send 100 Message",
+				"progressMax": 100
+			},
+			{
+				"name":        "Babel",
+				"description":  "Send 1000 Message",
+				"progressMax": 1000
+			}
+		]
+	},
+
+	{
+		"name": "banned",
+		"achievements": [{
+			"name":        "To Hell and Back",
+			"description": "Get banned",
+			"progressMax": 1
+		}]
+	}
+]

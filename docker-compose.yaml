@@ -1,0 +1,55 @@
+---
+version: '3'
+
+services:
+  frontend:
+    container_name: transcendence-frontend-prod
+    image: "transcendence-front:prod"
+    restart: always
+    ports:
+      - "${FRONT_PORT:-80}:80"
+    env_file:
+      - "app/frontend/.env"
+    build:
+      target: production
+      context: ./app/frontend
+      dockerfile: Dockerfile
+
+  database:
+    container_name: transcendence-postgres-prod
+    image: "postgres:14.1-alpine"
+    restart: always
+    ports:
+      - "5432:5432"
+    env_file:
+      - ".env"
+    volumes:
+      - "transcendence-data-prod:/var/lib/postgresql/data"
+
+  adminer:
+    container_name: transcendance-adminer-prod
+    image: "adminer"
+    restart: always
+    ports:
+      - "5000:8080"
+
+  backend:
+    container_name: transcendence-back-prod
+    image: "transcendence-back:prod"
+    restart: always
+    build:
+      target: production
+      context: ./app/backend
+      dockerfile: Dockerfile
+    depends_on:
+      - database
+    env_file:
+      - ".env"
+    ports:
+      - "3000:3000"
+
+volumes:
+  transcendence-data-prod:
+
+networks:
+  default:

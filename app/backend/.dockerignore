@@ -1,0 +1,17 @@
+*.md
+**/temp*
+**/.git
+**/.DS_Store
+**/node_modules
+temp?
+**/dist
+dist
+
+.dockerignore
+.gitignore
+Dockerfile
+Makefile
+npm-debug.log
+build
+
+!README.md

@@ -1,0 +1,9 @@
+from(x) = (x-iPos) / iSize
+to(x)   = oSize*x + oPos
+
+to(from(x)) = oSize * ((x-iPos) / iSize) + oPos
+            = (x-iPos) * osize/iSize + oPos
+            = x*oSize/iSize - iPos*oSize/iSize + oPos
+
+Scalar = oSize/iSize
+Offset = Scalar * -iPos + oPos;

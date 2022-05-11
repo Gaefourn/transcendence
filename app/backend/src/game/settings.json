@@ -1,0 +1,29 @@
+{
+	"fixedFramerate": 60,
+	"networkFramerate": 1,
+
+	"camera": {
+		"width": 110,
+		"height": 110
+	},
+
+	"playfield": {
+		"width": 100,
+		"height": 100
+	},
+
+	"paddles":{
+		"height": 15,
+		"width": 2,
+		"speed": 60,
+		"distanceToCenter": 42,
+		"maxDeflectAngle": 70
+	},
+
+	"ball": {
+		"radius": 1,
+		"velocity": 60,
+		"gravity": 60,
+		"accelerationIncrement": 5
+	}
+}
